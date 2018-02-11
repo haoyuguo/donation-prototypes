@@ -13,3 +13,8 @@ Starting at Laravel version 5.3, Vue.js is included in Laravel out of the box.  
 ## Install Cypress
 
 Simply run ```npm install cypress --save-dev``` under project root directory.
+
+## Vue-devtools is recommended
+
+When using Chrome browser, it's recommended to install ```vue-devtools``` extension.  This will add a new tab "Vue" in dev tools panel when displaying a Vue page. 
+ 
