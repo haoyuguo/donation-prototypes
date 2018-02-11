@@ -10,7 +10,7 @@ Starting at Laravel version 5.3, Vue.js is included in Laravel out of the box.  
 
 ([Composing Laravel page with Vue](compose-laravel-page-with-vue.md) is introduced separately)
 
-## Install Cypress
+## Install [Cypress](https://cypress.io)
 
 Simply run ```npm install cypress --save-dev``` under project root directory.
 
