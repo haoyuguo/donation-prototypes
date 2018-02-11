@@ -29,3 +29,9 @@ describe('Home page', function() {
 If the Cypress panel is open now, the new test file would appear on the panel.  Click on it to run, and expect part of it to fail -- because the home page now still have the default contents, which doesn't include a \<H1> tag at all.
 
 This is a RED.
+
+## Add \<H1> to make the test pass
+
+Now consider this the real beginning of the development, code/file structuring should be better thought out.  Replace the example component under ```resources/assets/js/components``` with a new one ```Home.vue```, and change ```resources/assets/js/app.js``` accordingly.
+
+Run ```npm run dev``` to make the compilation, then refresh the tests.  Now we have GREEN.
