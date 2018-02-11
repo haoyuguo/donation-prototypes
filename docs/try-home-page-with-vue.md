@@ -2,7 +2,7 @@
 
 ## Laravel route
 
-In ```routes/web.php```, change home page route to
+In `routes/web.php`, change home page route to
 
 ```
 Route::get('/', function () {
@@ -12,7 +12,7 @@ Route::get('/', function () {
 
 ## Laravel view for home route
 
-Create a new view ```resources/views/index.blade.php```, with contents
+Create a new view `resources/views/index.blade.php`, with contents
 
 ```
 <!doctype html>
@@ -36,7 +36,7 @@ Create a new view ```resources/views/index.blade.php```, with contents
 
 ## app.js for Vue
 
-Put the following contents in ```resources/assets/js/app.js```
+Put the following contents in `resources/assets/js/app.js`
 
 ```
 import Vue from 'vue';
@@ -50,12 +50,12 @@ const app = new Vue({
 
 ## Compile Vue file(s)
 
-Run ```npm run dev``` to have Vue.js file(s) compiled and saved to ```public/js``` folder of the project.
+Run `npm run dev` to have Vue.js file(s) compiled and saved to `public/js` folder of the project.
 
 ## Run the project with Vue
 
-- Once JS compiling, run this project with ```php artisan serv``` (from project root folder) or ```php -S localhost:port``` (from project "public" folder)
-- To have Vue.js files complied as changed, leave ```npm run watch``` running 
+- Once JS compiling, run this project with `php artisan serv` (from project root folder) or `php -S localhost:port` (from project "public" folder)
+- To have Vue.js files complied as changed, leave `npm run watch` running 
 
 The home page should now look like this 
 

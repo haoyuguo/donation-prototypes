@@ -3,3 +3,5 @@
 ## [Try Cypress out of the box](try-cypress-out-of-the-box.md)
 
 ## [First test - visit home page](first-test.md)
+
+## [Create multiple routes for SPA with TDD approach](multi-routes-spa.md)

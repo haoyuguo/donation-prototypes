@@ -2,12 +2,12 @@
 
 ## First test file 
 
-Add the following to ```cypress.json```
+Add the following to `cypress.json`
 ```
   "baseUrl": "http://localhost"
 ```
 
-Then create a new test file ```cypress/integration/home_spec.js``` 
+Then create a new test file `cypress/integration/home_spec.js` 
 ```
 const url = Cypress.config('baseUrl') + '/';
 
@@ -32,6 +32,6 @@ This is a RED.
 
 ## Add \<H1> to make the test pass
 
-Now consider this the real beginning of the development, code/file structuring should be better thought out.  Replace the example component under ```resources/assets/js/components``` with a new one ```Home.vue```, and change ```resources/assets/js/app.js``` accordingly.
+Now consider this the real beginning of the development, code/file structuring should be better thought out.  Replace the example component under `resources/assets/js/components` with a new one `Home.vue`, and change `resources/assets/js/app.js` accordingly.
 
-Run ```npm run dev``` to make the compilation, then refresh the tests.  Now we have GREEN.
+Run `npm run dev` to make the compilation, then refresh the tests.  Now we have GREEN.

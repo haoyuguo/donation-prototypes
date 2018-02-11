@@ -2,22 +2,22 @@
 
 ## Use Git to clone project to local
 
-```git clone https://github.com/singingfox/donation-prototypes.git```
+`git clone https://github.com/singingfox/donation-prototypes.git`
 
 ## Install dependencies 
 
 Go to project folder, and run 
 
-```composer install```
+`composer install`
 
 ## Create application key
 
-```copy ./env.example ./env```
+`copy ./env.example ./env`
 
-```php artisan key:generate```
+`php artisan key:generate`
 
 By now, the project can be started with 
 
-```php artisan serv```
+`php artisan serv`
 
-and accessed via ```http://localhost:8000```.
+and accessed via `http://localhost:8000`.

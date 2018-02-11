@@ -1,7 +1,7 @@
 
 const url = Cypress.config('baseUrl') + '/';
 
-describe('Home page', function() {
+describe('Home page "/"', function() {
   beforeEach(function() {
     cy.visit(url);
   });
