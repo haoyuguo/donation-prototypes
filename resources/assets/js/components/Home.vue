@@ -1,8 +1,5 @@
 <template>
-    <div>
-        <h1>Donation Application Prototypes</h1>
-        <p>Home page</p>
-    </div>
+    <h2>Home page</h2>
 </template>
 
 <script>
