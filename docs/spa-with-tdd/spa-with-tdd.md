@@ -5,3 +5,5 @@
 ## [First test - visit home page](first-test.md)
 
 ## [Create multiple routes for SPA with TDD approach](multi-routes-spa.md)
+
+## [Fetch data via API](fetch-data-via-api.md)

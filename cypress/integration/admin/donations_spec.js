@@ -1,5 +1,5 @@
-const pageName = 'Make a Donation';
-const relativeUrl = '/donate';
+const pageName = 'Donations List';
+const relativeUrl = '/admin/donations';
 const url = Cypress.config('baseUrl') + relativeUrl;
 
 describe(`${pageName} page "${relativeUrl}"`, function() {

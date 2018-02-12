@@ -1,7 +1,7 @@
+const relativeUrl = '/';
+const url = Cypress.config('baseUrl') + relativeUrl;
 
-const url = Cypress.config('baseUrl') + '/';
-
-describe('Home page "/"', function() {
+describe(`Home page "${relativeUrl}"`, function() {
   beforeEach(function() {
     cy.visit(url);
   });
