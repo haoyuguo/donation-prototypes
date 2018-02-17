@@ -1,6 +1,8 @@
 <?php
 
 Route::prefix('/api/latest')->group(function() {
+    Route::get('/org/{id?}', 'OrganizationController@show');
+
     Route::get('/donations', function() {
         return response()->json([
             [
