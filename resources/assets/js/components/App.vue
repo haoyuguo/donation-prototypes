@@ -1,53 +1,55 @@
+<style scoped>
+    div.container {
+        padding: 20px;
+    }
+</style>
+
 <template>
     <div class="container">
-        <section class="top">
-            <h1 class="title">Donation Application Prototype ({{ org.name }})</h1>
 
-            <nav class="navbar is-transparent">
-                <div class="navbar-brand">
+        <nav class="navbar is-transparent">
+            <div class="navbar-brand">
+                <h1 class="title control">Prototype</h1>
 <!--
-                    <p class="control">
-                        <a v-if="org.name && org.url" class="button is-primary" :href=org.url>
-                            <img v-if="org.logo" :src=org.logo alt="ALT" width="112" height="28">
-                            <span v-if="!org.logo">{{ org.name }}</span>
-                        </a>
-                    </p>
--->
-                    <div class="navbar-burger burger" data-target="navbarTransparent">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                <a v-if="org.name && org.url" class="button is-primary" :href=org.url>
+                    <img v-if="org.logo" :src=org.logo alt="ALT" width="112" height="28">
+                    <span v-if="!org.logo">{{ org.name }}</span>
+                </a>
+    -->
+                <div class="navbar-burger burger" data-target="navbarTransparent">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
+            </div>
 
-                <div id="navbarransparent" class="navbar-menu">
-                    <div class="navbar-start">
+            <div id="navbarransparent" class="navbar-menu">
+                <div class="navbar-start">
 
-                        <div class="navbar-item">
-                            <div class="field is-grouped">
-                                <p class="control">
-                                    <router-link :to="{ name: 'home' }" class="button is-primary">Home</router-link>
-                                </p>
+                    <div class="navbar-item">
+                        <div class="field is-grouped">
+                            <p class="control">
+                                <router-link :to="{ name: 'home' }" class="button is-primary">Home</router-link>
+                            </p>
 
-                                <p class="control">
-                                    <router-link :to="{ name: 'donate' }" class="button is-primary">Make a Donation</router-link>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="navbar-end">
-                        <div class="navbar-item has-dropdown is-hoverable">
-                            <router-link :to="{ name: 'admin' }" class="navbar-link">Admin</router-link>
-                            <div class="navbar-dropdown is-boxed">
-                                <router-link :to="{ name: 'donations' }" class="navbar-item">Donations</router-link>
-                                <router-link :to="{ name: 'donors' }" class="navbar-item">Donors</router-link>
-                                <router-link :to="{ name: 'payments' }" class="navbar-item">Payments</router-link>
-                            </div>
+                            <p class="control">
+                                <router-link :to="{ name: 'donate' }" class="button is-primary">Make a Donation</router-link>
+                            </p>
                         </div>
                     </div>
                 </div>
-            </nav>
-        </section>
+                <div class="navbar-end">
+                    <div class="navbar-item has-dropdown is-hoverable" v-if="$route.path.match(/^\/admin/)">
+                        <router-link :to="{ name: 'admin' }" class="navbar-link">Admin</router-link>
+                        <div class="navbar-dropdown is-boxed">
+                            <router-link :to="{ name: 'donations' }" class="navbar-item">Donations</router-link>
+                            <router-link :to="{ name: 'donors' }" class="navbar-item">Donors</router-link>
+                            <router-link :to="{ name: 'payments' }" class="navbar-item">Payments</router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <div class="content">
             <router-view></router-view>

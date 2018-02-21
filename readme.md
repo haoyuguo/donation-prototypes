@@ -11,3 +11,5 @@ A project to demo the creation of donation processing related prototypes with TD
 ## [Try a home page with Vue](docs/try-home-page-with-vue.md)
 
 ## [Create SPA using TDD approach](docs/spa-with-tdd/spa-with-tdd.md)
+
+## [Adding Bulma CSS framework](docs/add-bulma-css-framework.md)
